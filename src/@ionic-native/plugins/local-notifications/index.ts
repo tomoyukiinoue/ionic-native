@@ -94,6 +94,13 @@ export interface ILocalNotification {
   * Notification priority.
   */
   priority?: number;
+
+  /**
+   * ANDROID ONLY
+   * Heads-up notifications
+   * Default: false
+   */
+  headsup?: boolean;
 }
 
 /**
@@ -149,7 +156,7 @@ export interface ILocalNotification {
   pluginName: 'LocalNotifications',
   plugin: 'cordova-plugin-local-notification',
   pluginRef: 'cordova.plugins.notification.local',
-  repo: 'https://github.com/katzer/cordova-plugin-local-notifications',
+  repo: 'https://github.com/DavidBriglio/cordova-plugin-local-notifications',
   platforms: ['Android', 'iOS', 'Windows']
 })
 @Injectable()
